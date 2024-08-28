@@ -1,0 +1,45 @@
+html {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+
+}
+
+body {
+    background-color: lightsteelblue;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 1.2;
+    font-size: 3rem;
+    color: midnightblue;
+}
+table {
+    margin: 2rem;
+    border: 1px solid black;
+}
+
+thead tr {
+    background-color: royalblue;
+}
+th {
+    font-size: 1.25rem;
+}
+
+tbody th {
+    background-color: skyblue;
+}
+th,
+td {
+    padding: 0.5rem;
+    border: 1px solid black;
+}
+
+td {
+    background-color: white;
+}
+td:nth-child(3) {
+    font-family: "lucida console", courier, monospace;
+    color: black;
+}

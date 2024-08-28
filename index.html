@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial scale=1.0" />
+        <title>HTML Style Cheatsheet</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <h1>Dave's HTML Style Guide Cheatsheet</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Rule</th>
+                    <th>Description</th>
+                    <th>Example</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Declare doc type</th>
+                    <td>Always declare the document type as the first line in your document.</td>
+                    <td>&lt;!DOCTYPE html&gt;</td>
+                </tr>
+                <tr>
+                    <th>Lowercase element names</th>
+                    <td>Although HTML allows either case, lowercase is standard</td>
+                    <td>&lt;body&gt; NOT &lt;BODY&gt;</td>
+                </tr>
+                <tr>
+                    <th>Always close elements</th>
+                    <td>HTML doesn't require closing tags to work, but it can lead to unexpected results (except void elements! eg. &lt;br&gt;, &lt;col&gt;, &lt;img&gt;, &lt;input&gt;, &lt;link&gt;, &lt;source&gt;, &lt;track&gt;)</td>
+                    <td>&lt;section&gt;
+                        <br>&nbsp; &lt;p&gt;Some content&lt;/p&gt;
+                        <br>&lt;/section&gt;</td>
+                </tr>
+                <tr>
+                    <th>Lowercase attribute names</th>
+                    <td>As with element names.</td>
+                    <td>&lt;a href="https://www.anadress.com"&gt;</td>
+                </tr>
+                <tr>
+                    <th>Quote attribute values</th>
+                    <td>attributes work without quotes (unless there are spaces) but are easier to read with.</td>
+                    <td>&lt;table class="striped"&gt;</td>
+                </tr>
+                <tr>
+                    <th>Always specify alt, width, and height for images</th>
+                    <td>If an image can't be displayed it is important to have an alt message.  Width and height improves display by allowing the browser to reserve the space for the image.</td>
+                    <td>&lt;img src="animage.png" alt="Missing image" style="width:128px;height:128px"&gt;</td>
+                </tr>
+                <tr>
+                    <th>Space-less equal signs</th>
+                    <td>Although spaces are allowed it is easier to read without.</td>
+                    <td>&lt;link rel="stylesheet" href="styles.css"&gt;</td>
+                </tr>
+                <tr>
+                    <th>Avoid long code lines</th>
+                    <td>It is easier not to have to scroll an HTML editor</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Blank lines and indentation</th>
+                    <td>Only add blank lines to separate large or logical code blocks.  Use two or four spaces of indentation (pick one and stay consistent), not the tab key.</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>Never skip &lt;title&gt;</th>
+                    <td>It is required in HTML.  It is additionally very important for SEO.  Make it as accurate and meaningful as possible.</td>
+                    <td>&lt;title&gt;HTML Style Guide and Conventions&lt;/title&gt;</td>
+                </tr>
+                <tr>
+                    <th>Never skip &lt;html&gt; or &lt;body&gt;</th>
+                    <td>Ommitting body can produce errors in older browsers or crash some software.</td>
+                    <td>&lt;html&gt;<br>&lt;body&gt;</td>
+                </tr>
+                <tr>
+                    <th>Don't skip &lt;head&gt;</th>
+                    <td>It works without but don't.</td>
+                    <td>&lt;head&gt;</td>
+                </tr>
+                <tr>
+                    <th>Close empty elements</th>
+                    <td>To help with XML/XHTML software add the closing tags to the void tags.</td>
+                    <td>&lt;meta charset="utf-8" /&gt;</td>
+                </tr>
+                <tr>
+                    <th>add the lang attribute</th>
+                    <td>The language inside the html tag allows search engines and browsers to detect the language of the page.</td>
+                    <td>&lt;html lang="en-us"&gt;</td>
+                </tr>
+                <tr>
+                    <th>Define metadata</th>
+                    <td>For the same reason, include the character encoding asap in the head of a document.</td>
+                    <td>&lt;head&gt;
+                        <br>&nbsp; &lt;meta charset="UTF-8"&gt;
+                        <br>...;
+                    </td>
+                </tr>
+                <tr>
+                    <th>Set the viewport</th>
+                    <td>This meta element allows browsers to fit the page's dimensions and scaling to whatever device it's on.</td>
+                    <td>&lt;meta name="viewport" content="width=device=width, initial-scale=1.0"&gt;</td>
+                </tr>
+                <tr>
+                    <th>Comments</th>
+                    <td>Short comments on one line, long ones indented on multiple lines.</td>
+                    <td>&lt;!-- Comment 1 is short --&gt;
+                        <br>&lt;!--
+                        <br>&nbsp; Comment 2 is looooooooooo
+                        <br>&nbsp; oooooooooooooooooooooong.
+                        <br>--&gt;
+                    </td>
+                </tr>
+                <tr>
+                    <th>Lowercase file names</th>
+                    <td>Some web servers are case sensitive, others are not.  Moving from one to the other can break sites if file names are inconsistent. </td>
+                    <td>&lt;glasgow.jpg NOT Glasgow.jpg&gt;</td>
+                </tr>
+                <tr>
+                    <th>file extensions</th>
+                    <td>Files should have the correct extensions.</td>
+                    <td>index.html<br>style.css<br>myscript.js</td>
+                </tr>
+                <tr>
+            </tbody>
+            
+        </table>
+    </body>
+</html>
